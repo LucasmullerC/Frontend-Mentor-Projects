@@ -1,15 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
 body {
     background-color: hsl(212, 45%, 89%);
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+img{
+    width: 250px;
+}
+
+.component{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.childComponent{  
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.title{
+    font-family: 'Outfit', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    width: 250px;
+}
+.description{
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    color:hsl(220, 15%, 55%);
+    width: 250px;
 }
 
 .Ulbox{
     list-style: none;
-    background-color: hsl(0, 0%, 100%);
     text-align: center;
+    padding: 0;
 }
 
 .attribution { 
-    font-size: 11px; text-align: center; 
+    position: absolute;
+    margin-top: auto;
+    text-align: center; 
+    bottom: 0px;
+    font-size: 11px; 
 }
 
 .attribution a { 
