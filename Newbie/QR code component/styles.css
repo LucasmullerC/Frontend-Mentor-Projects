@@ -33,6 +33,7 @@ img{
     font-weight: bold;
     font-size: 20px;
     width: 250px;
+    color: hsl(218, 44%, 22%)
 }
 .description{
     font-family: 'Outfit', sans-serif;
