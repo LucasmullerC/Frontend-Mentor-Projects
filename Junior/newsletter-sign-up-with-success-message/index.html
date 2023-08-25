@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  
+
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
 </head>
@@ -16,14 +16,14 @@
     <div class="d-flex justify-content-center">
       <div class="col-md-6" id="rowCenter">
         <div class="row">
-          <div class="col order-sm-2"  id="coldesk">
-            <img src="assets/images/illustration-sign-up-desktop.svg" class="img-fluid singupimg"/>
+          <div class="col order-sm-2" id="coldesk">
+            <img src="assets/images/illustration-sign-up-desktop.svg" class="img-fluid singupimg" alt="Illustration of sign-up for desktop"/>
           </div>
           <div class="row order-sm-2" id="rowmob">
-            <img src="assets/images/illustration-sign-up-mobile.svg" class="img singupimgmob"/>
+            <img src="assets/images/illustration-sign-up-mobile.svg" class="img singupimgmob" alt="Illustration of sign-up for mobile"/>
           </div>
           <div class="col order-sm-1" id="contentcol">
-            <ul class="Ulcomp">
+            <ul class="Ulcomp" role="list">
               <li>
                 <h1>Stay updated!</h1>
               </li>
@@ -33,7 +33,7 @@
               <li>
                 <div class="row align-items-start">
                   <div class="col-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" aria-hidden="true"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
                   </div>
                   <div class="col-10">
                     <p>Product discovery and building what matters</p>
@@ -43,7 +43,7 @@
               <li>
                 <div class="row align-items-start">
                   <div class="col-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" aria-hidden="true"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
                   </div>
                   <div class="col-10">
                     <p>Measuring to ensure updates are a success</p>
@@ -53,7 +53,7 @@
               <li>
                 <div class="row align-items-start">
                   <div class="col-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" aria-hidden="true"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
                   </div>
                   <div class="col-10">
                     <p>And much more!</p>
@@ -62,16 +62,16 @@
               </li>
               <li>
                 <br>
-                <form id="subscription-form">
+                <form id="subscription-form" aria-label="Newsletter subscription form">
                   <div class="inputWrapper">
                     <div class="inputContainer">
-                    <label for="email">Email address</label>
-                    <label class="error-message" id="error-message">Invalid email address</label>
+                      <label for="email">Email address</label>
+                      <label class="error-message" id="error-message" aria-live="assertive">Invalid email address</label>
+                    </div>
+                    <input type="email" id="email" placeholder="email@company.com"/>
                   </div>
-                  <input type="email" id="email" placeholder="email@company.com"/>
-                </div>
                   <br>
-                  <input type="submit" value="Subscribe to monthly newsletter" id="submit">
+                  <input type="submit" value="Subscribe to monthly newsletter" id="submit" role="button">
                 </form>
               </li>
             </ul>
