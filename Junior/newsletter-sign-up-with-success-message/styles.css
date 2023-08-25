@@ -58,9 +58,22 @@ label{
     border-radius: 30px;
 }
 
-.inputWrapper label{
-    display:block;
+.inputWrapper {
+    display: flex;
+    flex-direction: column;
   }
+  
+.inputContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.error-message {
+    display: none;
+    color: hsl(4, 100%, 67%);
+    padding-right: 15px;
+}
 
 .Ulcomp{
     list-style: none;

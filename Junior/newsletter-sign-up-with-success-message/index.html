@@ -62,11 +62,14 @@
               </li>
               <li>
                 <br>
-                <form action="#">
+                <form id="subscription-form">
                   <div class="inputWrapper">
+                    <div class="inputContainer">
                     <label for="email">Email address</label>
-                    <input type="email" id="email" placeholder="email@company.com"/>
+                    <label class="error-message" id="error-message">Invalid email address</label>
                   </div>
+                  <input type="email" id="email" placeholder="email@company.com"/>
+                </div>
                   <br>
                   <input type="submit" value="Subscribe to monthly newsletter" id="submit">
                 </form>
@@ -82,5 +85,6 @@
     </div>
   </div>
 </body>
+<script src="app.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </html>
