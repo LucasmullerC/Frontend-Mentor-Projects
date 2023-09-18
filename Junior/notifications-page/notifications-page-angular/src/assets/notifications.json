@@ -1,0 +1,65 @@
+[
+    {
+    "type": "react",
+    "userPhotoUrl": "assets/images/avatar-mark-webber.webp",
+    "userName": "Mark Webber",
+    "action": "reacted to your recent post",
+    "content": "My first tournament today!",
+    "time": "1m ago",
+    "viewed": "false"
+    },
+    {
+      "type": "follow",
+      "userPhotoUrl": "assets/images/avatar-angela-gray.webp",
+      "userName": "Angela Gray",
+      "action": "followed you",
+      "time": "5m ago",
+      "viewed": "false"
+    },
+    {
+      "type": "joinGroup",
+      "userPhotoUrl": "assets/images/avatar-jacob-thompson.webp",
+      "userName": "Jacob Thompson",
+      "action": "has joined your group",
+      "content": "Chess Club",
+      "time": "1 day ago",
+      "viewed": "false"
+    },
+    {
+      "type": "privateMessage",
+      "userPhotoUrl": "assets/images/avatar-rizky-hasanuddin.webp",
+      "userName": "Rizky Hasanuddin",
+      "action": "sent you a private message",
+      "content": "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.",
+      "time": "5 days ago",
+      "viewed": "true"
+    },
+    {
+      "type": "comment",
+      "userPhotoUrl": "assets/images/avatar-kimberly-smith.webp",
+      "userName": "Kimberly Smith",
+      "action": "commented on your picture",
+      "image": "assets/images/image-chess.webp",
+      "time": "1 week ago",
+      "viewed": "true"
+    },
+    {
+        "type": "react",
+        "userPhotoUrl": "assets/images/avatar-nathan-peterson.webp",
+        "userName": "Nathan Peterson",
+        "action": "reacted to your recent post",
+        "content": "5 end-game strategies to increase your win rate",
+        "time": "2 weeks ago",
+        "viewed": "true"
+    },
+    {
+      "type": "leaveGroup",
+      "userPhotoUrl": "assets/images/avatar-anna-kim.webp",
+      "userName": "Anna Kim",
+      "action": "left the group",
+      "content": "Chess Club",
+      "time": "2 weeks ago",
+      "viewed": "true"
+    }
+  ]
+  
