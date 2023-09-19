@@ -1,0 +1,19 @@
+<div class="notification-item">
+    <img [src]="notification.userPhotoUrl" alt="User Photo">
+    <div class="notification-content">
+      <p>{{ notification.userName }}</p>
+      <p>{{ notification.action }}</p>
+      <!-- Renderizar o conteúdo com base no tipo de notificação -->
+      <ng-container *ngIf="notification.type === 'follow'">
+        <p>Um usuário começou a te seguir.</p>
+      </ng-container>
+      <ng-container *ngIf="notification.type === 'react'">
+        <p>Reagiu a uma de suas postagens:</p>
+        <p>{{ notification.content }}</p>
+      </ng-container>
+      <ng-container *ngIf="notification.type === 'joinGroup'">
+        <p>Entrou no seu grupo.</p>
+      </ng-container>
+      <!-- Adicione mais ng-containers para outros tipos de notificação -->
+    </div>
+  </div>
