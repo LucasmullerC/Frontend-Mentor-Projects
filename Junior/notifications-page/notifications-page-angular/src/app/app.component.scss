@@ -1,16 +1,25 @@
 .container{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height:85vh;
-    width: 40vw;
-    background-color: red;
+    align-items: center;
+    width: 30vw;
+    background-color: hsl(0, 0%, 100%);
 }
 .TopText{
     width: 40vw;
     display: flex;
     justify-content: space-between;
+    width: 93%;
 }
 .Notifications{
     display: flex;
+}
+.NotificationList{
+    width: 93%;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
 }

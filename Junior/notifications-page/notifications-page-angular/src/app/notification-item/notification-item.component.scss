@@ -1,0 +1,39 @@
+.notification-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+.notification-content{
+    padding-left: 10px;
+}
+.privateMessage{
+    align-self: flex-start;
+}
+.privateContent{
+    border-radius: 5px;
+    border-width: 2px;
+    border-style:solid;
+    border-color: hsl(211, 68%, 94%);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    margin-top: 10px;
+}
+.privateContent:hover{
+    background-color: hsl(211, 68%, 94%)
+}
+.notViewed{
+    background-color: hsl(210, 60%, 98%);
+    border-radius: 5px;
+}
+img{
+    width: 35px;
+    height: 35px;
+}
+p{
+    margin: 0;
+    font-size: 16px;
+}

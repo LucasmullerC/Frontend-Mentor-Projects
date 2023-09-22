@@ -6,7 +6,7 @@
     "action": "reacted to your recent post",
     "content": "My first tournament today!",
     "time": "1m ago",
-    "viewed": "false"
+    "viewed": "notViewed"
     },
     {
       "type": "follow",
@@ -14,7 +14,7 @@
       "userName": "Angela Gray",
       "action": "followed you",
       "time": "5m ago",
-      "viewed": "false"
+      "viewed": "notViewed"
     },
     {
       "type": "joinGroup",
@@ -23,7 +23,7 @@
       "action": "has joined your group",
       "content": "Chess Club",
       "time": "1 day ago",
-      "viewed": "false"
+      "viewed": "notViewed"
     },
     {
       "type": "privateMessage",
@@ -32,7 +32,7 @@
       "action": "sent you a private message",
       "content": "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.",
       "time": "5 days ago",
-      "viewed": "true"
+      "viewed": "Viwed"
     },
     {
       "type": "comment",
@@ -41,7 +41,7 @@
       "action": "commented on your picture",
       "image": "assets/images/image-chess.webp",
       "time": "1 week ago",
-      "viewed": "true"
+      "viewed": "Viwed"
     },
     {
         "type": "react",
@@ -50,7 +50,7 @@
         "action": "reacted to your recent post",
         "content": "5 end-game strategies to increase your win rate",
         "time": "2 weeks ago",
-        "viewed": "true"
+        "viewed": "Viwed"
     },
     {
       "type": "leaveGroup",
@@ -59,7 +59,7 @@
       "action": "left the group",
       "content": "Chess Club",
       "time": "2 weeks ago",
-      "viewed": "true"
+      "viewed": "Viwed"
     }
   ]
   
