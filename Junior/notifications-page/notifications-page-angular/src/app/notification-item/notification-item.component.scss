@@ -23,17 +23,45 @@
     margin-top: 10px;
 }
 .privateContent:hover{
-    background-color: hsl(211, 68%, 94%)
+    background-color: hsl(211, 68%, 94%);
+    cursor: pointer;
 }
 .notViewed{
     background-color: hsl(210, 60%, 98%);
     border-radius: 5px;
+
+    .dot{
+        height: 6px;
+        width: 6px;
+        background-color: hsl(1, 90%, 64%);
+        border-radius: 50%;
+        display: inline-block;
+        margin-left: 5px;
+        margin-bottom: 2px;
+    }
 }
+.picComment{
+    margin-left: auto;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
 img{
     width: 35px;
     height: 35px;
 }
 p{
+    font-family: PlusJakartaSans;
+    font-weight: 500;
     margin: 0;
     font-size: 16px;
+    color: hsl(219, 12%, 42%);
+}
+.interactive{
+    color: hsl(224, 21%, 14%);
+    font-weight: 800;
+}
+.interactive:hover{
+    color: hsl(219, 85%, 26%);
+    cursor: pointer;
 }

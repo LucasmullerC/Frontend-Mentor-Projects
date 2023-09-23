@@ -10,6 +10,7 @@ export class AppComponent implements OnInit {
   title = 'notifications-page-angular';
 
   notifications: any[] = [];
+  numNotifications: number = 0;
 
   constructor(private notificationService: NotificationService) { }
 
@@ -17,6 +18,8 @@ export class AppComponent implements OnInit {
     this.notificationService.getNotifications()
       .subscribe((data: any[]) => {
         this.notifications = data;
+
+        this.numNotifications = this.notifications.filter(notification => notification.viewed === 'notViewed').length;
       });
   }
 }

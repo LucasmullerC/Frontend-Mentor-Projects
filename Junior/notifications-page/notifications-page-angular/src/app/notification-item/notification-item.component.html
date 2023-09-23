@@ -2,15 +2,23 @@
     <img [src]="notification.userPhotoUrl" alt="User Photo" [className]="notification.type">
     <div class="notification-content">
       <ng-container *ngIf="notification.type === 'privateMessage'">
-        <p>{{ notification.userName }} {{ notification.action }}</p>
+        <p><span class="interactive">{{ notification.userName }}</span> {{ notification.action }} <span class="dot"></span></p>
         <p>{{ notification.time }}</p>
         <div class="privateContent">
           <p>{{ notification.content }}</p>
         </div>
       </ng-container>
       <ng-container *ngIf="notification.type != 'privateMessage'">
-          <p>{{ notification.userName }} {{ notification.action }} {{ notification.content }}</p>
+          <p>
+            <span class="interactive">{{ notification.userName }}</span> 
+            {{ notification.action }} 
+            <span class="interactive">{{ notification.content }}</span> 
+            <span class="dot"></span>
+          </p>
           <p>{{ notification.time }}</p>
       </ng-container>
     </div>
-  </div>
+    <ng-container *ngIf="notification.type === 'comment'">
+      <img [src]="notification.image" alt="Commented Picture" class="picComment">
+    </ng-container>
+</div>
