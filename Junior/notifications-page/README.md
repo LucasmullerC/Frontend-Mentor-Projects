@@ -27,10 +27,6 @@ Users should be able to:
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 
-### Screenshot
-
-![End Result](https://i.imgur.com/cz3GEtR.png)
-
 ### Links
 
 - Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/notifications-page-using-angular-CsbVNXy5uy)
