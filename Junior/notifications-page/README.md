@@ -16,7 +16,7 @@ This is a solution to the [Notifications page challenge on Frontend Mentor](http
 
 ### Screenshot
 
-![End Result](https://i.imgur.com/1JH9Nlj.png)
+![End Result](https://i.imgur.com/cz3GEtR.png)
 
 ### The challenge
 
