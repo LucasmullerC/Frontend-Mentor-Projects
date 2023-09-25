@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/notifications-page-using-angular-CsbVNXy5uy)
 - Live Site URL: [Add live site URL here](https://frontend-mentor-projects-s75l.vercel.app/)
 
 ## My process
