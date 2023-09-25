@@ -1,64 +1,57 @@
-Plus Jakarta Sans Variable Font
-===============================
+# Frontend Mentor - Notifications page solution
 
-This download contains Plus Jakarta Sans as both variable fonts and static fonts.
+This is a solution to the [Notifications page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/notifications-page-DqK5QAmKbC). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-Plus Jakarta Sans is a variable font with this axis:
-  wght
+## Table of contents
 
-This means all the styles are contained in these files:
-  PlusJakartaSans-VariableFont_wght.ttf
+- [Overview](#overview)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+- [Author](#author)
 
-If your app fully supports variable fonts, you can now pick intermediate styles
-that aren’t available as static fonts. Not all apps support variable fonts, and
-in those cases you can use the static font files for Plus Jakarta Sans:
-  static/PlusJakartaSans-Medium.ttf
-  static/PlusJakartaSans-ExtraBold.ttf
+## Overview
 
-Get started
------------
+### Screenshot
 
-1. Install the font files you want to use
+![End Result](https://i.imgur.com/1JH9Nlj.png)
 
-2. Use your app's font picker to view the font family and all the
-available styles
+### The challenge
 
-Learn more about variable fonts
--------------------------------
+Users should be able to:
 
-  https://developers.google.com/web/fundamentals/design-and-ux/typography/variable-fonts
-  https://variablefonts.typenetwork.com
-  https://medium.com/variable-fonts
+- Distinguish between "unread" and "read" notifications
+- Select "Mark all as read" to toggle the visual state of the unread notifications and set the number of unread messages to zero
+- View the optimal layout for the interface depending on their device's screen size
+- See hover and focus states for all interactive elements on the page
 
-In desktop apps
+### Screenshot
 
-  https://theblog.adobe.com/can-variable-fonts-illustrator-cc
-  https://helpx.adobe.com/nz/photoshop/using/fonts.html#variable_fonts
+![End Result](https://i.imgur.com/cz3GEtR.png)
 
-Online
+### Links
 
-  https://developers.google.com/fonts/docs/getting_started
-  https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fonts/Variable_Fonts_Guide
-  https://developer.microsoft.com/en-us/microsoft-edge/testdrive/demos/variable-fonts
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://frontend-mentor-projects-s75l.vercel.app/)
 
-Installing fonts
+## My process
 
-  MacOS: https://support.apple.com/en-us/HT201749
-  Linux: https://www.google.com/search?q=how+to+install+a+font+on+gnu%2Blinux
-  Windows: https://support.microsoft.com/en-us/help/314960/how-to-install-or-remove-a-font-in-windows
+### Built with
 
-Android Apps
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- [Angular](https://angular.io/) - JS library
 
-  https://developers.google.com/fonts/docs/android
-  https://developer.android.com/guide/topics/ui/look-and-feel/downloadable-fonts
+### What I learned
 
-License
--------
-Please read the full license text (OFL.txt) to understand the permissions,
-restrictions and requirements for usage, redistribution, and modification.
+Working on this project i could learn more about Angular and learn how to show a JSON data inside the page dynamically.
 
-You can use them in your products & projects – print or digital,
-commercial or otherwise.
+## Author
 
-This isn't legal advice, please consider consulting a lawyer and see the full
-license for all details.
+- Website - [Lucas Müller Corrêa](https://github.com/LucasmullerC)
+- Frontend Mentor - [@LucasmullerC](https://www.frontendmentor.io/profile/LucasmullerC)
+- Linkedin - [Lucas Müller](https://www.linkedin.com/in/lucas-m%C3%BCller-corr%C3%AAa-66721b213/)
