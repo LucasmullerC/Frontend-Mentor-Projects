@@ -3,6 +3,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    max-height: 100vh; //Colocar no media quando for fazer mobile
     background-color: hsl(210, 60%, 98%);
 }
