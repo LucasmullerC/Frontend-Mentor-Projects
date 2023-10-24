@@ -9,6 +9,7 @@ import { CommentService } from './comment.service';
 export class AppComponent implements OnInit{
   title = 'interactive-comments-section-angular';
 
+  currentUser: any[] = [];
   comments: any[] = [];
 
   constructor(private commentService: CommentService) { }
@@ -16,7 +17,8 @@ export class AppComponent implements OnInit{
   ngOnInit(): void {
     this.commentService.getComments()
     .subscribe((data: any[]) => {
-      this.comments = data;
+      this.comments = Object.values(data)[1];
+      this.currentUser = Object.values(data)[0];
     });
   }
 }

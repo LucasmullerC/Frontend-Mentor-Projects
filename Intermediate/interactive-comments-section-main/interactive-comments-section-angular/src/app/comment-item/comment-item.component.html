@@ -1,18 +1,19 @@
 <div class="comment-item">
     <div class="score">
         <a>+</a>
-        <p>12</p>
+        <p>{{comment.score}}</p>
         <a>-</a>
     </div>
     <div class="content">
         <div class="user-header">
-            <img [src]="" alt="User Photo" [className]="">
-            <p> 1 month ago</p>
+            <img [src]="comment.user.image.png" alt="User Photo" [className]="">
+            <p>{{comment.user.username}}</p>
+            <p>{{comment.createdAt}}</p>
             <p>reply</p>
         </div>
         <div class="comment-section">
             <p>
-                test comment
+                {{comment.content}}
             </p>
         </div>
     </div>
