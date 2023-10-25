@@ -1,7 +1,8 @@
 .comment-item{
     display: flex;
     align-items: center;
-    width: 650px;
+    flex: 0 0 auto;
+    background-color: red;
 }
 .score{
     text-align: center;

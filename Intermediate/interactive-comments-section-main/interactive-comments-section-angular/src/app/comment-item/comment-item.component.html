@@ -1,4 +1,4 @@
-<div class="comment-item">
+<div class="comment-item">    
     <div class="score">
         <a>+</a>
         <p>{{comment.score}}</p>
@@ -18,3 +18,10 @@
         </div>
     </div>
 </div>
+
+<!--Maybe this is not the best way to reproduce the replies. Accepting tips!-->
+<ul>
+    <li>
+        <app-comment-item *ngFor="let comment of comment.replies" [comment]="comment"></app-comment-item>
+    </li>
+</ul>
