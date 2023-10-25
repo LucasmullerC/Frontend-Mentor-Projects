@@ -1,6 +1,7 @@
 <div class="container">
     <ul>
         <app-comment-item *ngFor="let comment of comments" [comment]="comment"></app-comment-item>
+        <app-reply-item [user]="currentUser"></app-reply-item>
     </ul>
 </div>
 
