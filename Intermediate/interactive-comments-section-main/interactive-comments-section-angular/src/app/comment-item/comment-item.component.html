@@ -24,4 +24,7 @@
     <li>
         <app-comment-item *ngFor="let comment of comment.replies" [comment]="comment"></app-comment-item>
     </li>
+    <li class="replyArea">
+        <app-reply-item></app-reply-item>
+    </li>
 </ul>

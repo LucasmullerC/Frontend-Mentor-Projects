@@ -7,4 +7,5 @@ import { Component, Input } from '@angular/core';
 })
 export class CommentItemComponent {
   @Input() comment: any;
+  @Input() currentUser: any;
 }

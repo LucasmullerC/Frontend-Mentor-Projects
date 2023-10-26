@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
+import { CommentService } from '../comment.service';
 
 @Component({
   selector: 'app-reply-item',
@@ -6,5 +7,14 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./reply-item.component.scss']
 })
 export class ReplyItemComponent {
-  @Input() user: any;
+  currentUser: any[] = [];
+
+  constructor(private commentService: CommentService) { }
+
+  ngOnInit(): void {
+    this.commentService.getComments()
+    .subscribe((data: any[]) => {
+      this.currentUser = Object.values(data)[0].image.png;
+    });
+  }
 }
