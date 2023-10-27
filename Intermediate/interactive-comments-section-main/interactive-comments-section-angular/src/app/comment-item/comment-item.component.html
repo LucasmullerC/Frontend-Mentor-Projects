@@ -9,7 +9,7 @@
             <img [src]="comment.user.image.png" alt="User Photo" [className]="">
             <p>{{comment.user.username}}</p>
             <p>{{comment.createdAt}}</p>
-            <p>reply</p>
+            <button (click)="toggleReplyBox(comment.id)">reply</button>
         </div>
         <div class="comment-section">
             <p>
@@ -24,7 +24,7 @@
     <li>
         <app-comment-item *ngFor="let comment of comment.replies" [comment]="comment"></app-comment-item>
     </li>
-    <li class="replyArea">
+    <li class="replyArea" *ngIf="replyBoxes[comment.id]">
         <app-reply-item></app-reply-item>
     </li>
 </ul>

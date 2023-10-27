@@ -8,4 +8,10 @@ import { Component, Input } from '@angular/core';
 export class CommentItemComponent {
   @Input() comment: any;
   @Input() currentUser: any;
+
+  replyBoxes: { [commentId: number]: boolean } = {};
+
+  toggleReplyBox(commentId: number) {
+    this.replyBoxes[commentId] = !this.replyBoxes[commentId];
+  }
 }
