@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { CommentService } from '../comment.service';
 
 @Component({
   selector: 'app-comment-item',
@@ -7,7 +8,17 @@ import { Component, Input } from '@angular/core';
 })
 export class CommentItemComponent {
   @Input() comment: any;
-  @Input() currentUser: any;
+
+  currentUser: any[] = [];
+
+  constructor(private commentService: CommentService) { }
+
+  ngOnInit(): void {
+    this.commentService.getComments()
+    .subscribe((data: any[]) => {
+      this.currentUser = Object.values(data)[0].username;
+    });
+  }
 
   replyBoxes: { [commentId: number]: boolean } = {};
 

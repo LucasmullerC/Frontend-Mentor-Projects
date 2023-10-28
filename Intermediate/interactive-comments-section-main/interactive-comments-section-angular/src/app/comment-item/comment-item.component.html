@@ -6,10 +6,19 @@
     </div>
     <div class="content">
         <div class="user-header">
-            <img [src]="comment.user.image.png" alt="User Photo" [className]="">
-            <p>{{comment.user.username}}</p>
-            <p>{{comment.createdAt}}</p>
-            <button (click)="toggleReplyBox(comment.id)">reply</button>
+            <div class="userInfo">
+                <img [src]="comment.user.image.png" alt="User Photo" class="userPhoto">
+                <p>{{comment.user.username}}</p>
+                <p *ngIf="comment.user.username == currentUser">you</p>
+                <p>{{comment.createdAt}}</p>
+            </div>
+            <div class="optionsComment">
+                <button (click)="toggleReplyBox(comment.id)" *ngIf="comment.user.username != currentUser" class="replyComment">Reply</button>
+                <div *ngIf="comment.user.username == currentUser" style="display:flex; gap:10px">
+                    <button>Delete</button>
+                    <button>Edit</button>
+                </div>
+            </div>
         </div>
         <div class="comment-section">
             <p>

@@ -14,9 +14,19 @@
 }
 .user-header{
     display: flex;
-    align-items:baseline;
+    align-items:center;
+    justify-content: space-between;
 }
-
-.replyArea{
-    
+.userInfo{
+    display: flex;
+    align-items:center;
+    gap: 10px;
+}
+.userPhoto{
+    width: 25px;
+    height: 25px;
+}
+.optionsComment{
+    display: flex;
+    align-items:center;
 }
