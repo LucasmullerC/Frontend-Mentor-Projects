@@ -10,6 +10,8 @@ export class CommentItemComponent {
   @Input() comment: any;
 
   currentUser: any[] = [];
+  editBox: { [commentId: number]: boolean } = {};
+  replyBoxes: { [commentId: number]: boolean } = {};
 
   constructor(private commentService: CommentService) { }
 
@@ -20,9 +22,11 @@ export class CommentItemComponent {
     });
   }
 
-  replyBoxes: { [commentId: number]: boolean } = {};
-
   toggleReplyBox(commentId: number) {
     this.replyBoxes[commentId] = !this.replyBoxes[commentId];
+  }
+
+  toggleEditBox(commentId: number) {
+    this.editBox[commentId] = !this.editBox[commentId];
   }
 }

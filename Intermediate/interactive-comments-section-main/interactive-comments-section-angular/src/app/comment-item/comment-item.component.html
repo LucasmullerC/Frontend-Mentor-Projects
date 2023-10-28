@@ -16,11 +16,15 @@
                 <button (click)="toggleReplyBox(comment.id)" *ngIf="comment.user.username != currentUser" class="replyComment">Reply</button>
                 <div *ngIf="comment.user.username == currentUser" style="display:flex; gap:10px">
                     <button>Delete</button>
-                    <button>Edit</button>
+                    <button (click)="toggleEditBox(comment.id)">Edit</button>
                 </div>
             </div>
         </div>
-        <div class="comment-section">
+        <div class="edit-mode" *ngIf="editBox[comment.id]">
+            <textarea name="Text1" cols="69" rows="5" class="inputReply"></textarea>
+            <button type="submit" style="width: 80px; height: 30px;">UPDATE</button>
+        </div>
+        <div class="comment-section" *ngIf="!editBox[comment.id]">
             <p>
                 {{comment.content}}
             </p>
