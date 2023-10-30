@@ -4,11 +4,13 @@
     justify-content: center;
     gap: 10px;
     flex: 0 0 auto;
-    background-color: red;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: hsl(0, 0%, 100%);
 }
 .inputReply{
    height: 60px; 
-   width: 450px;
+   width: 500px;
 }
 .profImg{
     padding-bottom: 40px;

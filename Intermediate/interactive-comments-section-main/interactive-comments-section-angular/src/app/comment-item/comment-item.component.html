@@ -1,43 +1,44 @@
-<div class="comment-item">    
-    <div class="score">
-        <a>+</a>
-        <p>{{comment.score}}</p>
-        <a>-</a>
-    </div>
-    <div class="content">
-        <div class="user-header">
-            <div class="userInfo">
-                <img [src]="comment.user.image.png" alt="User Photo" class="userPhoto">
-                <p>{{comment.user.username}}</p>
-                <p *ngIf="comment.user.username == currentUser">you</p>
-                <p>{{comment.createdAt}}</p>
-            </div>
-            <div class="optionsComment">
-                <button (click)="toggleReplyBox(comment.id)" *ngIf="comment.user.username != currentUser" class="replyComment">Reply</button>
-                <div *ngIf="comment.user.username == currentUser" style="display:flex; gap:10px">
-                    <button>Delete</button>
-                    <button (click)="toggleEditBox(comment.id)">Edit</button>
+<li class="liComment" style="margin-top: 10px;">
+    <div class="comment-item">    
+        <div class="score">
+            <a>+</a>
+            <p>{{comment.score}}</p>
+            <a>-</a>
+        </div>
+        <div class="content">
+            <div class="user-header">
+                <div class="userInfo">
+                    <img [src]="comment.user.image.png" alt="User Photo" class="userPhoto">
+                    <p>{{comment.user.username}}</p>
+                    <p *ngIf="comment.user.username == currentUser">you</p>
+                    <p>{{comment.createdAt}}</p>
+                </div>
+                <div class="optionsComment">
+                    <button (click)="toggleReplyBox(comment.id)" *ngIf="comment.user.username != currentUser" class="replyComment">Reply</button>
+                    <div *ngIf="comment.user.username == currentUser" style="display:flex; gap:10px">
+                        <button>Delete</button>
+                        <button (click)="toggleEditBox(comment.id)">Edit</button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="edit-mode" *ngIf="editBox[comment.id]">
-            <textarea cols="69" rows="5" class="inputReply" >{{comment.replyingTo!=null ? ('@'+comment.replyingTo) : ""}} {{comment.content}}</textarea>
-            <button type="submit" style="width: 80px; height: 30px; ">UPDATE</button>
-        </div>
-        <div class="comment-section" *ngIf="!editBox[comment.id]">
-            <p>
-                {{comment.replyingTo!=null ? ('@'+comment.replyingTo) : ""}} {{comment.content}}
-            </p>
+            <div class="edit-mode" *ngIf="editBox[comment.id]">
+                <textarea cols="65" rows="5" class="textAreaEdit" >{{comment.replyingTo!=null ? ('@'+comment.replyingTo) : ""}} {{comment.content}}</textarea>
+                <button type="submit" style="width: 80px; height: 30px; ">UPDATE</button>
+            </div>
+            <div class="comment-section" *ngIf="!editBox[comment.id]">
+                <p class="contextText">
+                    {{comment.replyingTo!=null ? ('@'+comment.replyingTo) : ""}} {{comment.content}}
+                </p>
+            </div>
         </div>
     </div>
-</div>
-
-<!--Maybe this is not the best way to reproduce the replies. Accepting tips!-->
-<ul>
-    <li style="padding-left: 40px;">
-        <app-comment-item *ngFor="let comment of comment.replies" [comment]="comment"></app-comment-item>
-    </li>
-    <li class="replyArea" *ngIf="replyBoxes[comment.id]">
-        <app-reply-item></app-reply-item>
-    </li>
-</ul>
+    <!--Maybe this is not the best way to reproduce the replies. Accepting tips!-->
+    <ul>
+        <li style="padding-left: 40px;">
+            <app-comment-item *ngFor="let comment of comment.replies" [comment]="comment"></app-comment-item>
+        </li>
+        <li style="margin-top: 5px;" *ngIf="replyBoxes[comment.id]">
+            <app-reply-item></app-reply-item>
+        </li>
+    </ul>
+</li>
