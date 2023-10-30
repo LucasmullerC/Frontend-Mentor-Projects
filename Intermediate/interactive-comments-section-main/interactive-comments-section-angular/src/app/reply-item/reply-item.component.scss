@@ -1,10 +1,21 @@
 .reply-item{
     display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 10px;
     flex: 0 0 auto;
     background-color: red;
 }
 .inputReply{
    height: 60px; 
    width: 450px;
+}
+.profImg{
+    padding-bottom: 40px;
+    width: 30px;
+    height: 30px;
+}
+
+.replyBtn{
+    margin-bottom: 40px;
 }

@@ -21,12 +21,12 @@
             </div>
         </div>
         <div class="edit-mode" *ngIf="editBox[comment.id]">
-            <textarea name="Text1" cols="69" rows="5" class="inputReply"></textarea>
-            <button type="submit" style="width: 80px; height: 30px;">UPDATE</button>
+            <textarea cols="69" rows="5" class="inputReply" >{{comment.replyingTo!=null ? ('@'+comment.replyingTo) : ""}} {{comment.content}}</textarea>
+            <button type="submit" style="width: 80px; height: 30px; ">UPDATE</button>
         </div>
         <div class="comment-section" *ngIf="!editBox[comment.id]">
             <p>
-                {{comment.content}}
+                {{comment.replyingTo!=null ? ('@'+comment.replyingTo) : ""}} {{comment.content}}
             </p>
         </div>
     </div>
@@ -34,7 +34,7 @@
 
 <!--Maybe this is not the best way to reproduce the replies. Accepting tips!-->
 <ul>
-    <li>
+    <li style="padding-left: 40px;">
         <app-comment-item *ngFor="let comment of comment.replies" [comment]="comment"></app-comment-item>
     </li>
     <li class="replyArea" *ngIf="replyBoxes[comment.id]">
