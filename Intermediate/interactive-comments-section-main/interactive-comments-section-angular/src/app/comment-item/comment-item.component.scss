@@ -3,15 +3,26 @@
     align-items: center;
     flex: 0 0 auto;
     border-radius: 5px;
-    background-color: hsl(0, 0%, 100%);
+    background-color: hsl(0, 0%, 100%) ;
 }
 .score{
+    font-size: 13px;
+    align-self: normal;
     text-align: center;
-    margin-left: 20px;
-    margin-right: 20px;
-    width: 30px;
-    background-color: blue;
+    margin: 15px 20px 0 20px; //top | right | bottom | left
+    padding: 10px 0 10px 0;
+    width: 40px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: hsl(228, 33%, 97%);
     
+}
+.plusminus{
+    color: hsl(239, 57%, 85%);
+    cursor: pointer;
+}
+.plusminus:hover{
+    color: hsl(238, 40%, 52%);
 }
 .content{
     width: 100%;
@@ -20,6 +31,12 @@
     display: flex;
     align-items:center;
     justify-content: space-between;
+}
+.username{
+    font-family: Rubik;
+    font-size: 15px;
+    font-weight: 700;
+    color: hsl(212, 24%, 26%);
 }
 .userInfo{
     display: flex;
@@ -42,15 +59,78 @@
     align-items: flex-end;
     gap: 10px;
     margin-right: 10px;
+    padding-bottom: 20px;
 }
 .textAreaEdit{
-    width: 99%;
+    font-family: Rubik;
+    font-size: 15px;
+    font-weight: 400;
+    color:hsl(212, 24%, 26%);
+
+    border-radius: 10px;
+    border-color: hsl(211, 10%, 45%);
+    border-style:solid;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 96%;
     align-self: flex-start;   
+    resize: none;
+}
+
+.blueButton{
+    font-family: Rubik;
+    font-size: 15px;
+    color: hsl(228, 33%, 97%);
+
+    background-color: hsl(238, 40%, 52%);
+    border-radius: 5px;
+    border: none;
+    width: 90px; 
+    height: 40px;
+    cursor: pointer;
+}
+.blueButton:hover{
+    background-color: hsl(239, 57%, 85%);
 }
 
 .contextText{
     margin-top: 0;
     margin-right: 10px;
+}
+
+.createdAt, .contextText{
+    font-family: Rubik;
+    font-size: 15px;
+    font-weight: 400;
+    color: hsl(211, 10%, 45%);
+}
+
+.youTag{
+    font-family: Rubik;
+    font-weight: 400;
+    
+    background-color: hsl(238, 40%, 52%);
+    color: white;
+    padding: 0 5px 2px 5px;
+}
+
+.deleteButton, .editButton, .replyComment{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.deleteButton{
+    font-family: Rubik;
+    font-weight: 500;
+    color: hsl(358, 79%, 66%);
+}
+
+.editButton, .replyComment, .score, .mention{
+    font-family: Rubik;
+    color:hsl(238, 40%, 52%);
+    font-weight: 500;
 }
 
 ul{

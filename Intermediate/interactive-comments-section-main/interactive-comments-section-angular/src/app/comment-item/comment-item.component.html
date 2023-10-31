@@ -1,33 +1,33 @@
 <li class="liComment" style="margin-top: 10px;">
     <div class="comment-item">    
         <div class="score">
-            <a>+</a>
-            <p>{{comment.score}}</p>
-            <a>-</a>
+            <a class="plusminus">+</a>
+            <p style="margin: 8px 0 8px 0;">{{comment.score}}</p>
+            <a class="plusminus">-</a>
         </div>
         <div class="content">
             <div class="user-header">
                 <div class="userInfo">
                     <img [src]="comment.user.image.png" alt="User Photo" class="userPhoto">
-                    <p>{{comment.user.username}}</p>
-                    <p *ngIf="comment.user.username == currentUser">you</p>
-                    <p>{{comment.createdAt}}</p>
+                    <p class="username">{{comment.user.username}}</p>
+                    <p *ngIf="comment.user.username == currentUser" class="youTag">you</p>
+                    <p class="createdAt">{{comment.createdAt}}</p>
                 </div>
                 <div class="optionsComment">
                     <button (click)="toggleReplyBox(comment.id)" *ngIf="comment.user.username != currentUser" class="replyComment">Reply</button>
                     <div *ngIf="comment.user.username == currentUser" style="display:flex; gap:10px">
-                        <button>Delete</button>
-                        <button (click)="toggleEditBox(comment.id)">Edit</button>
+                        <button class="deleteButton">Delete</button>
+                        <button (click)="toggleEditBox(comment.id)" class="editButton">Edit</button>
                     </div>
                 </div>
             </div>
             <div class="edit-mode" *ngIf="editBox[comment.id]">
                 <textarea cols="65" rows="5" class="textAreaEdit" >{{comment.replyingTo!=null ? ('@'+comment.replyingTo) : ""}} {{comment.content}}</textarea>
-                <button type="submit" style="width: 80px; height: 30px; ">UPDATE</button>
+                <button type="submit" class="blueButton">UPDATE</button>
             </div>
             <div class="comment-section" *ngIf="!editBox[comment.id]">
                 <p class="contextText">
-                    {{comment.replyingTo!=null ? ('@'+comment.replyingTo) : ""}} {{comment.content}}
+                    <span class="mention">{{comment.replyingTo!=null ? ('@'+comment.replyingTo) : ""}}</span> {{comment.content}}
                 </p>
             </div>
         </div>
