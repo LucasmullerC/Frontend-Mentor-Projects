@@ -39,12 +39,14 @@
             </div>
         </div>
     </div>
+
     <!--Maybe this is not the best way to reproduce the replies. Accepting tips!-->
     <ul>
-        <li style="padding-left: 40px;">
+        <li style="padding-left: 80px;" class="replyChain">
             <app-comment-item *ngFor="let comment of comment.replies" [comment]="comment"></app-comment-item>
+            <div class="vertical-line" *ngIf="replyBoxes[comment.id]"></div>
         </li>
-        <li style="margin-top: 5px;" *ngIf="replyBoxes[comment.id]">
+        <li style="margin-top: 5px;" *ngIf="replyBoxes[comment.id]" class="replyItem">
             <app-reply-item></app-reply-item>
         </li>
     </ul>
