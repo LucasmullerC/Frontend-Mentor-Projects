@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { CommentService } from '../comment.service';
 
 @Component({
   selector: 'app-reply-item',
@@ -9,12 +8,9 @@ import { CommentService } from '../comment.service';
 export class ReplyItemComponent {
   currentUser: any[] = [];
 
-  constructor(private commentService: CommentService) { }
+  constructor() { }
 
   ngOnInit(): void {
-    this.commentService.getComments()
-    .subscribe((data: any[]) => {
-      this.currentUser = Object.values(data)[0].image.png;
-    });
+    this.currentUser = JSON.parse(localStorage.getItem("dataJson") || '{}')[0].image.png;
   }
 }
