@@ -154,9 +154,22 @@ ul{
     margin: 0;
 }
 
+.ulReply{
+    position: relative;
+}
+
 .replyChain {
     position: relative;
     margin-top: 10px;
+}
+
+.mainReply{
+    position: relative;
+    padding-left: 80px;
+}
+
+.parentReply{
+    margin-top: 5px;
 }
 
 .vertical-line {

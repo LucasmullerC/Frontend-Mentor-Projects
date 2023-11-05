@@ -48,4 +48,14 @@ export class CommentItemComponent {
 
     this.toggleEditBox(comment);
   }
+
+  updateScore(comment: any, action: boolean){
+    if(action == true){
+      comment.score = comment.score + 1;
+    }
+    else{
+      comment.score = comment.score - 1;
+    }
+    this.commentService.EditComment(comment);
+  }
 }
