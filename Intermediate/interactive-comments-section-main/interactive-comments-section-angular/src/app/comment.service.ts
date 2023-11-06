@@ -49,4 +49,10 @@ export class CommentService {
     }
     localStorage.setItem('dataJson', JSON.stringify(Object.values(this.dataJson)));
   }
+
+  sendComment(comment: any){
+    console.log("entrou");
+    this.dataJson[1].push(comment);
+    localStorage.setItem('dataJson', JSON.stringify(Object.values(this.dataJson)));
+  }
 }
