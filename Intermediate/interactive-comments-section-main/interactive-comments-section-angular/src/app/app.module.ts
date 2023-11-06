@@ -6,12 +6,14 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { CommentItemComponent } from './comment-item/comment-item.component';
 import { ReplyItemComponent } from './reply-item/reply-item.component';
+import { DeleteCommentComponent } from './delete-comment/delete-comment.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CommentItemComponent,
-    ReplyItemComponent
+    ReplyItemComponent,
+    DeleteCommentComponent
   ],
   imports: [
     BrowserModule,

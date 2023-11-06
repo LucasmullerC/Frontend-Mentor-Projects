@@ -1,0 +1,66 @@
+.backgroundFilter{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: hsl(211, 10%, 45%);
+    opacity: .5;
+    z-index: 0;
+}
+
+.deleteContainer{
+    position: absolute;
+    background-color: hsl(0, 0%, 100%);
+    width: 320px;
+    height: 190px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 20px;
+    padding-top: 10px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.h1Delete{
+    font-family: Rubik;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.pDelete{
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 16px;
+    color: hsl(211, 10%, 45%);
+}
+
+.cancelBtn, .deleteBtn{
+    font-family: Rubik;
+    font-size: 15px;
+    color: hsl(228, 33%, 97%);
+
+    border-radius: 5px;
+    border: none;
+    width: 140px; 
+    height: 40px;
+    cursor: pointer;
+}
+.cancelBtn:hover{
+    background-color: hsl(239, 57%, 85%);
+}
+
+.cancelBtn{
+    background-color: hsl(211, 10%, 45%);
+    margin-right: 20px;
+}
+
+.deleteBtn{
+    background-color: hsl(358, 79%, 66%);
+}
+
+.deleteBtn:hover{
+    background-color: hsl(357, 100%, 86%);
+}
