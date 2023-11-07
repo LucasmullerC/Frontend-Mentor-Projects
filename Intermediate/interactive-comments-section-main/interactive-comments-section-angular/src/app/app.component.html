@@ -2,9 +2,8 @@
     <ul>
         <app-comment-item *ngFor="let comment of comments" [comment]="comment" class="commentItem"></app-comment-item>
         <li style="margin-top: 5px;">
-            <app-reply-item [type]="'SEND'"></app-reply-item>
+            <app-reply-item [type]="'SEND'" [reply]="false"></app-reply-item>
         </li>
     </ul>
-    <app-delete-comment></app-delete-comment>
 </div>
 

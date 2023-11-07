@@ -16,6 +16,7 @@ export class CommentItemComponent {
   
   editBox: { [commentId: number]: boolean } = {};
   replyBoxes: { [commentId: number]: boolean } = {};
+  deleteBoxes: { [commentId: number]: boolean } = {};
 
   constructor(private commentService: CommentService) { }
 
@@ -26,6 +27,11 @@ export class CommentItemComponent {
 
   toggleReplyBox(commentId: number) {
     this.replyBoxes[commentId] = !this.replyBoxes[commentId];
+  }
+
+  
+  toggleDeleteBox(commentId: number) {
+    this.deleteBoxes[commentId] = !this.deleteBoxes[commentId];
   }
 
   toggleEditBox(comment: any) {
