@@ -6,26 +6,6 @@
     background-color: hsl(0, 0%, 100%) ;
     min-height: 110px;
 }
-.score{
-    font-size: 13px;
-    align-self: normal;
-    text-align: center;
-    margin: 15px 20px 0 20px; //top | right | bottom | left
-    padding: 10px 0 10px 0;
-    width: 40px;
-    height: 60px;
-    border-radius: 10px;
-    background-color: hsl(228, 33%, 97%);
-    
-}
-.plusminus{
-    color: hsl(239, 57%, 85%);
-    cursor: pointer;
-}
-.plusminus:hover{
-    color: hsl(238, 40%, 52%);
-    fill: hsl(238, 40%, 52%);
-}
 .content{
     width: 100%;
 }
@@ -48,11 +28,6 @@
 .userPhoto{
     width: 25px;
     height: 25px;
-}
-.optionsComment{
-    display: flex;
-    align-items:center;
-    padding-right: 10px;
 }
 
 .edit-mode{
@@ -119,33 +94,7 @@
     padding: 0 5px 2px 5px;
 }
 
-.deleteButton, .editButton, .replyComment{
-    border: none;
-    background: none;
-    cursor: pointer;
-}
-.editButton:hover, .replyComment:hover{
-    color: hsl(239, 57%, 85%);
-
-    svg path{
-        fill: hsl(239, 57%, 85%); 
-    }
-}
-.deleteButton:hover {
-    color: hsl(357, 100%, 86%);
-
-    svg path{
-        fill: hsl(357, 100%, 86%); 
-    }
-}
-
-.deleteButton{
-    font-family: Rubik;
-    font-weight: 500;
-    color: hsl(358, 79%, 66%);
-}
-
-.editButton, .replyComment, .score, .mention{
+.mention{
     font-family: Rubik;
     color:hsl(238, 40%, 52%);
     font-weight: 500;
@@ -183,4 +132,43 @@ ul{
     bottom: 0;
     left: 37px;
     z-index: -1;
+}
+
+@media (min-width: 680px) {
+    .desktopOptions{
+        display: block;
+    }
+    .desktopScore{
+        display: block;
+    }
+    .mobileOptions{
+        display: none;
+    }
+}
+
+@media (max-width: 680px) {
+    .comment-item{
+        flex-direction: column;
+        padding-left: 10px;
+        width: 90%;
+    }
+    .desktopOptions{
+        display: none;
+    }
+    .desktopScore{
+        display: none;
+    }
+    .mobileOptions{
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .replyChain {
+        padding-left: 20px !important;
+    }
+    .vertical-line {
+        left: 10px;
+    }
 }

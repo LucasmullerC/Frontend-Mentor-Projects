@@ -6,7 +6,7 @@
     left: 0;
     background-color: hsl(211, 10%, 45%);
     opacity: .5;
-    z-index: 0;
+    z-index: 1;
 }
 
 .deleteContainer{
@@ -21,7 +21,7 @@
     padding-left: 20px;
     padding-top: 10px;
     border-radius: 5px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .h1Delete{

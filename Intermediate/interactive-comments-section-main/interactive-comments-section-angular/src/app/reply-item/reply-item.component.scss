@@ -50,3 +50,11 @@
 .replyBtn:hover{
     background-color: hsl(239, 57%, 85%);
 }
+
+@media (max-width: 680px) {
+    .reply-item{
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 88%;
+    }
+}

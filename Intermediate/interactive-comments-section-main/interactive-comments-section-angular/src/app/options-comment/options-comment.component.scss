@@ -1,0 +1,37 @@
+.optionsComment{
+    display: flex;
+    align-items:center;
+    padding-right: 10px;
+}
+
+.deleteButton, .editButton, .replyComment{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.editButton:hover, .replyComment:hover{
+    color: hsl(239, 57%, 85%);
+
+    svg path{
+        fill: hsl(239, 57%, 85%); 
+    }
+}
+.deleteButton:hover {
+    color: hsl(357, 100%, 86%);
+
+    svg path{
+        fill: hsl(357, 100%, 86%); 
+    }
+}
+
+.deleteButton{
+    font-family: Rubik;
+    font-weight: 500;
+    color: hsl(358, 79%, 66%);
+}
+
+.editButton, .replyComment{
+    font-family: Rubik;
+    color:hsl(238, 40%, 52%);
+    font-weight: 500;
+}

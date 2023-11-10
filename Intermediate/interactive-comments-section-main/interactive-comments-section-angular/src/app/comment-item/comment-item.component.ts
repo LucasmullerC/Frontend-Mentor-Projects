@@ -1,5 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { CommentService } from '../comment.service';
+import { OptionsLinkService } from '../options-link.service';
+import { Subscription } from 'rxjs/internal/Subscription';
 
 @Component({
   selector: 'app-comment-item',
@@ -17,18 +19,26 @@ export class CommentItemComponent {
   editBox: { [commentId: number]: boolean } = {};
   replyBoxes: { [commentId: number]: boolean } = {};
   deleteBoxes: { [commentId: number]: boolean } = {};
+  subscription: Subscription = new Subscription;
 
-  constructor(private commentService: CommentService) { }
+  constructor(private commentService: CommentService, private OptionsService: OptionsLinkService) { 
+  }
 
   ngOnInit(): void {
     this.dataJson = JSON.parse(localStorage.getItem("dataJson") || '{}');
     this.currentUser = this.dataJson[0].username;
-  }
 
-  toggleReplyBox(commentId: number) {
-    this.replyBoxes[commentId] = !this.replyBoxes[commentId];
-  }
+    //Listening to editbox visibility change
+    this.subscription = this.OptionsService.editBoxSubject.subscribe((editBox: { [commentId: number]: boolean }) => {
+      this.editedContent = (this.comment.replyingTo != null ? ('@' + this.comment.replyingTo) : '') + ' ' + this.comment.content;
+      this.editBox[this.comment.id] = editBox[this.comment.id];
+   });
 
+   //Listening to replybox visibility change
+   this.subscription = this.OptionsService.replyBoxesSubject.subscribe((replyBoxes: { [commentId: number]: boolean }) => {
+    this.replyBoxes[this.comment.id] = replyBoxes[this.comment.id];
+   });
+  }
   
   toggleDeleteBox(commentId: number) {
     this.deleteBoxes[commentId] = !this.deleteBoxes[commentId];
@@ -53,15 +63,5 @@ export class CommentItemComponent {
     this.commentService.EditComment(comment);
 
     this.toggleEditBox(comment);
-  }
-
-  updateScore(comment: any, action: boolean){
-    if(action == true){
-      comment.score = comment.score + 1;
-    }
-    else{
-      comment.score = comment.score - 1;
-    }
-    this.commentService.EditComment(comment);
   }
 }
