@@ -24,3 +24,9 @@
   * Screenshot
   ![Notifications page using Angular](img/notification_page_angular.png "Website Screenshot")
   * [Live Website](https://frontend-mentor-projects-s75l.vercel.app/)
+
+  ## Intermediate
+* <strong>[Interactive comments section using Angular with LocalStorage](https://www.frontendmentor.io/solutions/interactive-comments-section-using-angular-with-localstorage-_obFXTIY2n)</strong>
+  * Screenshot
+  ![Interactive comments section using Angular with LocalStorage](img/Interactive_comments_angular.png "Website Screenshot")
+  * [Live Website](https://charming-sherbet-c5a7e9.netlify.app/)

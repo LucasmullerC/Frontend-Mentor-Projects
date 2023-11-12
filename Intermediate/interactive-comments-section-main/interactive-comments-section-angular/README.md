@@ -1,27 +1,56 @@
-# InteractiveCommentsSectionAngular
+# Frontend Mentor - Interactive comments section solution
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.6.
+This is a solution to the [Interactive comments section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-comments-section-iG1RugEG9). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Development server
+## Table of contents
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Overview](#overview)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+- [Author](#author)
 
-## Code scaffolding
+## Overview
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### The challenge
 
-## Build
+Users should be able to:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- View the optimal layout for the app depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Create, Read, Update, and Delete comments and replies
+- Upvote and downvote comments
+- **Bonus**: If you're building a purely front-end project, use `localStorage` to save the current state in the browser that persists when the browser is refreshed.
+- **Bonus**: Instead of using the `createdAt` strings from the `data.json` file, try using timestamps and dynamically track the time since the comment or reply was posted.
 
-## Running unit tests
+### Screenshot
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![End Result](https://i.imgur.com/VixMBwS.png)
 
-## Running end-to-end tests
+### Links
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/interactive-comments-section-using-angular-with-localstorage-_obFXTIY2n)
+- Live Site URL: [Add live site URL here](https://charming-sherbet-c5a7e9.netlify.app/)
 
-## Further help
+## My process
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- [Angular](https://angular.io/) - JS library
+- [Styled Components](https://styled-components.com/) - For styles
+
+### What I learned
+
+Working in this project i could learn how to communicate different components with the same data.
+
+## Author
+
+- Website - [Lucas Müller Corrêa](https://github.com/LucasmullerC)
+- Frontend Mentor - [@LucasmullerC](https://www.frontendmentor.io/profile/LucasmullerC)
+- Linkedin - [Lucas Müller](https://www.linkedin.com/in/lucas-m%C3%BCller-corr%C3%AAa-66721b213/)
